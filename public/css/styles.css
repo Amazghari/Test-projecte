@@ -1,0 +1,55 @@
+.addSong{
+    margin-top: 50px;
+
+}
+#playButton{
+    display: grid;
+        align-items: end;
+        justify-items: end;
+        justify-content: center;
+        align-content: space-evenly;
+}
+#editButton{
+    display: grid;
+    align-items: end;
+    justify-items: end;
+    justify-content: center;
+    align-content: space-evenly;
+}
+#textoDesc{
+    display: flex
+;
+    align-content: space-around;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.table-responsive-stack td, 
+        .table-responsive-stack th {
+            padding: .75rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .table-responsive-stack tr {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #dee2e6;
+                margin-bottom: 1rem;
+            }
+            .table-responsive-stack td, 
+            .table-responsive-stack th {
+                text-align: left !important;
+                border: none;
+                position: relative;
+            }
+            .table-responsive-stack td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: inline-block;
+                width: 120px;
+            }
+            .action-buttons {
+                display: flex;
+                gap: 0.5rem;
+                justify-content: flex-start;
+            }
+        }
